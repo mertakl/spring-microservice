@@ -1,0 +1,11 @@
+server.port: 9001
+spring.application.name: demo-discovery-server
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 3000
+    response-cache-update-interval-ms: 3000
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url.defaultZone: http://localhost:${server.port}/eureka
+

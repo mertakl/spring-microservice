@@ -1,0 +1,12 @@
+server.port: 9902
+
+spring:
+  application:
+    name: library-service
+eureka:
+  client:
+    service-url.defaultZone: ${EUREKA_URI:http://localhost:9001/eureka}
+    service-url.registryFetchIntervalSeconds: 1
+  instance:
+    lease-renewal-interval-in-seconds: 1
+
